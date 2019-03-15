@@ -1,0 +1,21 @@
+class hayvan:
+    def __init__(self,isim,tur,renk):
+        self.isim=isim
+        self.tur=tur
+        self.renk=renk
+class at(hayvan):
+    def __init__(self,isim,tur,renk,yas,mevki,hiz):
+        hayvan.__init__(self,isim,tur,renk)
+        self.yas=yas
+        self.mevki=mevki
+        self.hiz=hiz
+    def surat(self):
+        x=100/self.hiz
+        print (self.isim,"hızı saniyede ",x,"metre")
+    
+    
+hayvan1=hayvan("bold","arap","beyaz")
+print(hayvan1.isim,hayvan1.tur,hayvan1.renk)
+at1=at("bold","arap","beyaz","11","ingiliz",20)
+print(at1.isim,at1.tur,at1.renk,at1.yas,at1.hiz,at1.mevki)
+at1.surat()
