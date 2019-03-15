@@ -1,0 +1,32 @@
+class sinif:
+    x=5
+n1=sinif()
+print(n1.x)
+// default olarak çalışcaka metotlarımız varsa init kullanırız self aslında buraya yazdığımız metotun tüm sınıfa ait olduğunu anlıyoryz self sadece bir obje self yerine istediğmi zher şeyi yazabilirz
+"""
+class insan:
+    def __init__(self,isim,soyad,yas): 
+        self.isim=isim
+        self.soyad=soyad
+        self.yas=yas
+    def yazdir(self):
+        print("merhaba",self.isim)
+
+
+class ogrenci(insan):
+    def __init__(self,isim,soyad,yas,mezuniyet):
+        insan.__init__(self,isim,soyad,yas)
+            self.mezuniyet=mezuniyet
+    def bolum(self):
+        print(self.isim,"Siber güvenlik öğrencisdir")
+            
+            
+            
+            
+            
+kisi1=insan("hilal","köse",19,2020)
+print(kisi1.isim)
+kisi1.yazdir()
+print(kisi1.yas)
+print(kisi1.mezuniyet)
+kisi1.bolum()
