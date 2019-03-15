@@ -1,0 +1,32 @@
+"""
+from random import randint // random içerisinden sadece randinti import et demek...
+
+import random as rnd //randomu rnd olarak çağır demektir.
+a=rnd.randint(1,100)
+print (a)
+print(dir(rnd))
+"""
+def yazdir(isim):
+    print("Hoşgeldiniz,", isim)
+def faktor(n):
+    carpim=1
+    for x in range (1, n+1):
+        carpim*x
+    return carpim
+def ters(sayi):
+    kelime=""
+    while sayi>0:
+         kalan=sayi%10
+         sayi=(sayi-kalan)/10
+         kelime=kelime+str(int(kalan))
+    return kelime
+    
+    
+    
+MODUL ÇAĞIRLMASI
+
+import modul1
+modul1.yazdir("asli")
+z=modul1.faktor(5)
+print(z)
+print(modul1.ters(12345))
